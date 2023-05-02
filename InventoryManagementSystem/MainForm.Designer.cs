@@ -29,16 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -47,14 +49,6 @@
             this.panel1.Size = new System.Drawing.Size(798, 114);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Navy;
-            this.panel2.Location = new System.Drawing.Point(1, 434);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(798, 18);
-            this.panel2.TabIndex = 1;
-            // 
             // panel3
             // 
             this.panel3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -62,6 +56,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(798, 303);
             this.panel3.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Navy;
+            this.label2.Font = new System.Drawing.Font("Goudy Stout", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 64);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "M \r\n";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -74,17 +80,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "lnventory Management System";
             // 
-            // label2
+            // panel2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Goudy Stout", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 64);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "s";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.panel2.BackColor = System.Drawing.Color.Navy;
+            this.panel2.Location = new System.Drawing.Point(1, 434);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(798, 18);
+            this.panel2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Navy;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(99, 63);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox1.Size = new System.Drawing.Size(100, 30);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "demy";
             // 
             // MainForm
             // 
@@ -108,5 +121,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
