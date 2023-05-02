@@ -286,6 +286,30 @@
   <ItemGroup>
     <None Include="images\product h.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Untitled design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\c 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\c 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\11111.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
