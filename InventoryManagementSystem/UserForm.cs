@@ -45,5 +45,15 @@ private void dataGridView1_CellContentClick(object sender, DataGridViewCellEvent
         {
 
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            UserModuleForm userModule = new UserModuleForm();
+            userModule.btnSave.Enabled = true;
+            userModule.btnUpdate.Enabled = false;
+            userModule.ShowDialog();
+
+
+        }
     }
 }
