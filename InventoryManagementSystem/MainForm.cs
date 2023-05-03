@@ -17,6 +17,16 @@ namespace InventoryManagementSystem
             InitializeComponent();
         }
 
+        //To show subform in mainform
+
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
