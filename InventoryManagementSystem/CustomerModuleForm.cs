@@ -30,6 +30,7 @@ namespace InventoryManagementSystem
                     cm = new SqlCommand("INSERT INTO tbCustomer(cname,cphone)VALUES(@cname, @cphone)", con);
                     cm.Parameters.AddWithValue("@cname", txtCName.Text);
                     cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
+                    con.Open();
                     cm.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("User has been successfully saved.");
@@ -57,6 +58,11 @@ namespace InventoryManagementSystem
             Clear();
             btnSave.Enabled = true;
             btnUpdate.Enabled = false;
+        }
+
+        private void pictureBoxClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
