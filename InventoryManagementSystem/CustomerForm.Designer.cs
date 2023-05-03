@@ -67,9 +67,9 @@
             this.label3.Location = new System.Drawing.Point(600, 248);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 23);
+            this.label3.Size = new System.Drawing.Size(101, 23);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Product";
+            this.label3.Text = "Product 1";
             // 
             // label1
             // 
