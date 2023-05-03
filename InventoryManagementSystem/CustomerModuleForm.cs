@@ -78,7 +78,7 @@ namespace InventoryManagementSystem
                     con.Open();
                     cm.ExecuteNonQuery();
                     con.Close();
-                    MessageBox.Show("User has been successfully updated!");
+                    MessageBox.Show("Customer has been successfully updated!");
                     this.Dispose();
 
                 }
