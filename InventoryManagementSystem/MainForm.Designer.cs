@@ -53,7 +53,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(124, 72);
+            this.textBox1.Location = new System.Drawing.Point(120, 72);
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox1.Size = new System.Drawing.Size(100, 30);
@@ -83,8 +83,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Red;
+            this.label1.BackColor = System.Drawing.Color.Salmon;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(242, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(305, 21);
