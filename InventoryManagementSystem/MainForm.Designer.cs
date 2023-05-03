@@ -139,7 +139,7 @@
             this.btnOrder.Image = global::InventoryManagementSystem.Properties.Resources.Untitled_design;
             this.btnOrder.ImageHover = global::InventoryManagementSystem.Properties.Resources._11111;
             this.btnOrder.ImageNormal = global::InventoryManagementSystem.Properties.Resources.Untitled_design;
-            this.btnOrder.Location = new System.Drawing.Point(896, 24);
+            this.btnOrder.Location = new System.Drawing.Point(892, 24);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(30, 30);
             this.btnOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,7 +151,7 @@
             this.btnUser.Image = global::InventoryManagementSystem.Properties.Resources.users;
             this.btnUser.ImageHover = global::InventoryManagementSystem.Properties.Resources._111;
             this.btnUser.ImageNormal = global::InventoryManagementSystem.Properties.Resources.users;
-            this.btnUser.Location = new System.Drawing.Point(794, 24);
+            this.btnUser.Location = new System.Drawing.Point(790, 24);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(30, 30);
             this.btnUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -164,7 +164,7 @@
             this.btnCategory.Image = global::InventoryManagementSystem.Properties.Resources.category;
             this.btnCategory.ImageHover = global::InventoryManagementSystem.Properties.Resources.c_3;
             this.btnCategory.ImageNormal = global::InventoryManagementSystem.Properties.Resources.category;
-            this.btnCategory.Location = new System.Drawing.Point(693, 24);
+            this.btnCategory.Location = new System.Drawing.Point(686, 24);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Size = new System.Drawing.Size(30, 30);
             this.btnCategory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -176,7 +176,7 @@
             this.btnCustomer.Image = global::InventoryManagementSystem.Properties.Resources.customer;
             this.btnCustomer.ImageHover = global::InventoryManagementSystem.Properties.Resources.c_2;
             this.btnCustomer.ImageNormal = global::InventoryManagementSystem.Properties.Resources.customer;
-            this.btnCustomer.Location = new System.Drawing.Point(584, 24);
+            this.btnCustomer.Location = new System.Drawing.Point(579, 24);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(30, 30);
             this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -188,7 +188,7 @@
             this.btnProduct.Image = global::InventoryManagementSystem.Properties.Resources.product;
             this.btnProduct.ImageHover = global::InventoryManagementSystem.Properties.Resources.product_h;
             this.btnProduct.ImageNormal = global::InventoryManagementSystem.Properties.Resources.product;
-            this.btnProduct.Location = new System.Drawing.Point(481, 24);
+            this.btnProduct.Location = new System.Drawing.Point(476, 24);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(30, 30);
             this.btnProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -245,6 +245,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
