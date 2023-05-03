@@ -37,11 +37,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Lavender;
+            this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.IndianRed;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -133,12 +134,23 @@
             this.checkBox1.Text = "check";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.Location = new System.Drawing.Point(590, 395);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(176, 49);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "button3";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1200, 646);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
@@ -172,5 +184,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button2;
     }
 }
