@@ -50,7 +50,7 @@
             this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel1.Controls.Add(this.label6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.ForeColor = System.Drawing.Color.IndianRed;
+            this.panel1.ForeColor = System.Drawing.Color.Transparent;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel1.Name = "panel1";
