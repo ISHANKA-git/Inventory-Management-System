@@ -35,7 +35,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Magenta;
+            this.panel1.BackColor = System.Drawing.Color.BlueViolet;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -44,7 +44,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Lavender;
+            this.panel2.BackColor = System.Drawing.Color.MediumBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 429);
             this.panel2.Name = "panel2";
@@ -62,7 +62,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
