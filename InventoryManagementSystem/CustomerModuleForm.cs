@@ -13,6 +13,8 @@ namespace InventoryManagementSystem
 {
     public partial class CustomerModuleForm : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ishan\Documents\dbIMS.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlCommand cm = new SqlCommand();
         public CustomerModuleForm()
         {
             InitializeComponent();
@@ -20,7 +22,41 @@ namespace InventoryManagementSystem
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            try
+            {
+               
+                if (MessageBox.Show("Are you sure want to save this customer?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cm = new SqlCommand("INSERT INTO tbCustomer(cname,cphone)VALUES(@cname, @cphone)", con);
+                    cm.Parameters.AddWithValue("@cname", txtCName.Text);
+                    cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("User has been successfully saved.");
+                    Clear();
 
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void Clear()
+        {
+            txtCName.Clear();
+            txtCPhone.Clear();
+            btnSave.Enabled = true;
+            btnUpdate.Enabled = false;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clear();
+            btnSave.Enabled = true;
+            btnUpdate.Enabled = false;
         }
     }
 }
