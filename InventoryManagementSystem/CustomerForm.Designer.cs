@@ -40,11 +40,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.IndianRed;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -164,6 +167,16 @@
             this.panel4.Size = new System.Drawing.Size(200, 496);
             this.panel4.TabIndex = 10;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Silver;
+            this.label6.Location = new System.Drawing.Point(218, 39);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 23);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "label6";
+            // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -190,6 +203,8 @@
             this.Text = "User";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.CustomerForm_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +224,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label6;
     }
 }
