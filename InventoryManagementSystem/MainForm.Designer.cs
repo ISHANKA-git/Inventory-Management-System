@@ -58,7 +58,7 @@
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox1.Size = new System.Drawing.Size(100, 30);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "demy";
+            this.textBox1.Text = "DEMO";
             // 
             // panel3
             // 
