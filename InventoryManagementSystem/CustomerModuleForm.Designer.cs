@@ -129,6 +129,7 @@
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxClose.TabIndex = 10;
             this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // label1
             // 
@@ -201,6 +202,6 @@
         private System.Windows.Forms.PictureBox pictureBoxClose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblCId;
+        public System.Windows.Forms.Label lblCId;
     }
 }
