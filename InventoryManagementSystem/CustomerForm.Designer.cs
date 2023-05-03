@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panel1
@@ -51,12 +51,14 @@
             this.panel2.Size = new System.Drawing.Size(800, 21);
             this.panel2.TabIndex = 0;
             // 
-            // panel3
+            // label3
             // 
-            this.panel3.Location = new System.Drawing.Point(113, 148);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 100);
-            this.panel3.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(400, 173);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Product";
             // 
             // CustomerForm
             // 
@@ -64,12 +66,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "CustomerForm";
-            this.Text = "CustomerForm";
+            this.Text = "User";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -77,6 +80,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label3;
     }
 }
