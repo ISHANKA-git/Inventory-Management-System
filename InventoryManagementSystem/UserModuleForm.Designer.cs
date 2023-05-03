@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
@@ -44,6 +43,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.txtRepass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
@@ -58,17 +58,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(602, 57);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.Image = global::InventoryManagementSystem.Properties.Resources.close;
-            this.pictureBoxClose.Location = new System.Drawing.Point(571, 0);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(30, 30);
-            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxClose.TabIndex = 10;
-            this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -81,6 +71,7 @@
             this.label1.Size = new System.Drawing.Size(120, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "User Module";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -91,6 +82,7 @@
             this.label2.Size = new System.Drawing.Size(92, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "User Name :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtUserName
             // 
@@ -99,6 +91,7 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(343, 24);
             this.txtUserName.TabIndex = 2;
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // txtFullName
             // 
@@ -107,6 +100,7 @@
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(343, 24);
             this.txtFullName.TabIndex = 4;
+            this.txtFullName.TextChanged += new System.EventHandler(this.txtFullName_TextChanged);
             // 
             // label3
             // 
@@ -126,6 +120,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(343, 24);
             this.txtPass.TabIndex = 6;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // label4
             // 
@@ -136,6 +131,7 @@
             this.label4.Size = new System.Drawing.Size(83, 18);
             this.label4.TabIndex = 5;
             this.label4.Text = "Password :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtPhone
             // 
@@ -144,6 +140,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(343, 24);
             this.txtPhone.TabIndex = 8;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // label5
             // 
@@ -154,6 +151,7 @@
             this.label5.Size = new System.Drawing.Size(59, 18);
             this.label5.TabIndex = 7;
             this.label5.Text = "Phone :";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnSave
             // 
@@ -204,6 +202,7 @@
             this.txtRepass.Name = "txtRepass";
             this.txtRepass.Size = new System.Drawing.Size(343, 24);
             this.txtRepass.TabIndex = 13;
+            this.txtRepass.TextChanged += new System.EventHandler(this.txtRepass_TextChanged);
             // 
             // label6
             // 
@@ -215,6 +214,17 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Re-Type Password :";
             this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Image = global::InventoryManagementSystem.Properties.Resources.close;
+            this.pictureBoxClose.Location = new System.Drawing.Point(571, 0);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(30, 30);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxClose.TabIndex = 10;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // UserModuleForm
             // 
