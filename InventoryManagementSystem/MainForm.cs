@@ -25,11 +25,23 @@ namespace InventoryManagementSystem
             if (activeForm != null)
                 activeForm.Close();
             activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            openChildForm(new UserForm());
         }
     }
 }
