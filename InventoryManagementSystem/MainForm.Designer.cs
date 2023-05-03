@@ -53,12 +53,12 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(99, 63);
+            this.textBox1.Location = new System.Drawing.Point(124, 72);
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox1.Size = new System.Drawing.Size(100, 30);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "DEMO";
+            this.textBox1.Text = "DEMY";
             // 
             // panel3
             // 
@@ -75,21 +75,21 @@
             this.label2.Font = new System.Drawing.Font("Goudy Stout", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(11, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 64);
+            this.label2.Size = new System.Drawing.Size(107, 64);
             this.label2.TabIndex = 1;
-            this.label2.Text = "MS";
+            this.label2.Text = "M";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(242, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 21);
+            this.label1.Size = new System.Drawing.Size(305, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "lnventory Management System";
+            this.label1.Text = "INVENTORY MANAGEMENT SYSTEM";
             // 
             // panel2
             // 
