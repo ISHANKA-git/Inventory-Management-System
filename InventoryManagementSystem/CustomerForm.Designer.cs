@@ -170,12 +170,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Silver;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(218, 39);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 23);
+            this.label6.Size = new System.Drawing.Size(58, 23);
             this.label6.TabIndex = 0;
-            this.label6.Text = "label6";
+            this.label6.Text = "login";
             // 
             // CustomerForm
             // 
