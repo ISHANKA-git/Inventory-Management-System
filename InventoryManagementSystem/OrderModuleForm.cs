@@ -70,6 +70,9 @@ namespace InventoryManagementSystem
 
         private void dgvCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            txtCId.Text = dgvCustomer.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtCName.Text = dgvCustomer.Rows[e.RowIndex].Cells[2].Value.ToString();
+
 
         }
 
