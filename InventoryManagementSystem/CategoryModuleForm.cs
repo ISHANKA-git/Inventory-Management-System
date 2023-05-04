@@ -2,38 +2,49 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace InventoryManagementSystem
 {
-    public partial class CustomerModuleForm : Form
+    public partial class CategoryModuleForm : Form
     {
+
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ishan\Documents\dbIMS.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
-        public CustomerModuleForm()
+        public CategoryModuleForm()
         {
             InitializeComponent();
+        }
+
+        private void lblCId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CategoryModuleForm_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
             {
-               
-                if (MessageBox.Show("Are you sure want to save this customer?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+
+                if (MessageBox.Show("Are you sure want to save this category?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    cm = new SqlCommand("INSERT INTO tbCustomer(cname,cphone)VALUES(@cname, @cphone)", con);
-                    cm.Parameters.AddWithValue("@cname", txtCName.Text);
-                    cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
+                    cm = new SqlCommand("INSERT INTO tbCategory(catname)VALUES(@catname)", con);
+                    cm.Parameters.AddWithValue("@catname", txtCatName.Text);
+                    
                     con.Open();
                     cm.ExecuteNonQuery();
                     con.Close();
-                    MessageBox.Show("User has been successfully saved.");
+                    MessageBox.Show("Category has been successfully saved.");
                     Clear();
 
                 }
@@ -47,10 +58,7 @@ namespace InventoryManagementSystem
 
         public void Clear()
         {
-            txtCName.Clear();
-            txtCPhone.Clear();
-            btnSave.Enabled = true;
-            btnUpdate.Enabled = false;
+            txtCatName.Clear();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -69,16 +77,14 @@ namespace InventoryManagementSystem
         {
             try
             {
-                if (MessageBox.Show("Are you sure want to update this Customer?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure want to update this Category?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    cm = new SqlCommand("UPDATE tbCustomer SET cname = @cname ,cphone=@cphone WHERE cid LIKE '" + lblCId.Text + "'", con);
-                    cm.Parameters.AddWithValue("@cname", txtCName.Text);
-
-                    cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
+                    cm = new SqlCommand("UPDATE tbCategory SET catname = @catname WHERE catid LIKE '" + lblCatId.Text + "'", con);
+                    cm.Parameters.AddWithValue("@catname", txtCatName.Text);
                     con.Open();
                     cm.ExecuteNonQuery();
                     con.Close();
-                    MessageBox.Show("Customer has been successfully updated!");
+                    MessageBox.Show("Category has been successfully updated!");
                     this.Dispose();
 
                 }
@@ -88,14 +94,6 @@ namespace InventoryManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
-
-
-
-        }
-
-        private void CustomerModuleForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
