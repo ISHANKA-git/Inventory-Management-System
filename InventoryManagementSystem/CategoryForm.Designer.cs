@@ -51,9 +51,9 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 378);
+            this.panel1.Location = new System.Drawing.Point(0, 438);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(992, 64);
+            this.panel1.Size = new System.Drawing.Size(992, 51);
             this.panel1.TabIndex = 4;
             // 
             // btnAdd
@@ -64,7 +64,7 @@
             this.btnAdd.ImageNormal = global::InventoryManagementSystem.Properties.Resources.plus;
             this.btnAdd.Location = new System.Drawing.Point(962, 0);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(30, 64);
+            this.btnAdd.Size = new System.Drawing.Size(30, 51);
             this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnAdd.TabIndex = 2;
             this.btnAdd.TabStop = false;
@@ -75,7 +75,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 22);
             this.label1.TabIndex = 1;
@@ -108,7 +108,7 @@
             this.dgvCategory.Name = "dgvCategory";
             this.dgvCategory.RowHeadersWidth = 51;
             this.dgvCategory.RowTemplate.Height = 24;
-            this.dgvCategory.Size = new System.Drawing.Size(992, 442);
+            this.dgvCategory.Size = new System.Drawing.Size(992, 489);
             this.dgvCategory.TabIndex = 3;
             this.dgvCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomer_CellContentClick);
             // 
@@ -165,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 442);
+            this.ClientSize = new System.Drawing.Size(992, 489);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvCategory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
