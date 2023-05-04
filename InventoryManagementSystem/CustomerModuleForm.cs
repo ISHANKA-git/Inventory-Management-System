@@ -92,7 +92,10 @@ namespace InventoryManagementSystem
 
 
         }
-           
 
+        private void CustomerModuleForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
