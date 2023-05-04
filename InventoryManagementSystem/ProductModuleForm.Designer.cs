@@ -44,6 +44,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.comboCat = new System.Windows.Forms.ComboBox();
+            this.lblPid = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +61,7 @@
             this.btnClear.TabIndex = 25;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // label5
             // 
@@ -189,6 +191,7 @@
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -213,11 +216,22 @@
             this.comboCat.Size = new System.Drawing.Size(343, 24);
             this.comboCat.TabIndex = 28;
             // 
+            // lblPid
+            // 
+            this.lblPid.AutoSize = true;
+            this.lblPid.Location = new System.Drawing.Point(91, 310);
+            this.lblPid.Name = "lblPid";
+            this.lblPid.Size = new System.Drawing.Size(66, 16);
+            this.lblPid.TabIndex = 29;
+            this.lblPid.Text = "product id";
+            this.lblPid.Visible = false;
+            // 
             // ProductModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 354);
+            this.Controls.Add(this.lblPid);
             this.Controls.Add(this.comboCat);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label5);
@@ -263,5 +277,6 @@
         public System.Windows.Forms.Button btnUpdate;
         public System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.ComboBox comboCat;
+        public System.Windows.Forms.Label lblPid;
     }
 }
