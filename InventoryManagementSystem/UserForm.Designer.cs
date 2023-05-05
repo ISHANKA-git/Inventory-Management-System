@@ -62,11 +62,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAdd.Image = global::InventoryManagementSystem.Properties.Resources.plus;
             this.btnAdd.ImageHover = global::InventoryManagementSystem.Properties.Resources.plus_hover;
             this.btnAdd.ImageNormal = global::InventoryManagementSystem.Properties.Resources.plus;
-            this.btnAdd.Location = new System.Drawing.Point(962, 0);
+            this.btnAdd.Location = new System.Drawing.Point(144, 0);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(30, 64);
             this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
